@@ -1,106 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 550 550" style="enable-background:new 0 0 550 550;" xml:space="preserve">
-<style type="text/css">
-	.label{font-family:'BitstreamVeraSans-Roman';font-size:36px;}
-	.label_sub{font-size:18px;}
-	.resistor{fill:#C9924B;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
-	.circuit{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
-	.connection{fill:#FFFFFF;}
-</style>
-<g id="svg2" xmlns:svg="http://www.w3.org/2000/svg">
-</g>
-<g id="Ebene_2">
-	<text transform="matrix(1 0 0 1 45.0001 285.5659)"><tspan x="0" y="0" class="label">V</tspan><tspan x="20.1" y="0" class="label_sub">in</tspan></text>
-	<g>
-		<polyline points="95,55 302.2,55 425,55 		"/>
-		<g>
-			<polyline class="circuit" points="95,55 302.2,55 425,55 			"/>
-			<g>
-				<g>
-					<path class="connection" d="M95,62.5c-4.2,0-7.5-3.4-7.5-7.5s3.4-7.5,7.5-7.5c4.2,0,7.5,3.4,7.5,7.5S99.2,62.5,95,62.5z"/>
-					<path d="M95,63.5c4.7,0,8.5-3.8,8.5-8.5s-3.8-8.5-8.5-8.5c-4.7,0-8.5,3.8-8.5,8.5S90.3,63.5,95,63.5
-						C99.7,63.5,90.3,63.5,95,63.5z M95,48.5c3.6,0,6.5,2.9,6.5,6.5s-2.9,6.5-6.5,6.5c-3.6,0-6.5-2.9-6.5-6.5S91.4,48.5,95,48.5
-						C98.6,48.5,91.4,48.5,95,48.5z"/>
-				</g>
-			</g>
-			<g>
-				<g>
-					<path class="connection" d="M425,62.5c4.2,0,7.5-3.4,7.5-7.5s-3.4-7.5-7.5-7.5c-4.2,0-7.5,3.4-7.5,7.5S420.8,62.5,425,62.5z"/>
-					<path d="M425,63.5c-4.7,0-8.5-3.8-8.5-8.5s3.8-8.5,8.5-8.5c4.7,0,8.5,3.8,8.5,8.5S429.7,63.5,425,63.5
-						C420.3,63.5,429.7,63.5,425,63.5z M425,48.5c-3.6,0-6.5,2.9-6.5,6.5s2.9,6.5,6.5,6.5c3.6,0,6.5-2.9,6.5-6.5
-						S428.6,48.5,425,48.5C421.4,48.5,428.6,48.5,425,48.5z"/>
-				</g>
-			</g>
-		</g>
+	viewBox="0 0 550 550" style="enable-background:new 0 0 550 550;" xml:space="preserve">
+		<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Roboto');
+		@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono');
+
+		.label {
+			font-family: 'Roboto Mono', monospace;
+			font-size: 36px;
+		}
+
+		.label_sub {
+			font-family: 'Roboto Mono', monospace;
+			font-size: 18px;
+		}
+
+		.resistor {
+			fill: #C9924B;
+			stroke: #000000;
+			stroke-width: 2;
+			stroke-miterlimit: 10;
+		}
+
+		.circuit {
+			fill: none;
+			stroke: #000000;
+			stroke-width: 2;
+			stroke-miterlimit: 10;
+		}
+
+		.endpoint {
+			fill: #FFFFFF;
+		}
+
+		.connection {
+			fill: #000;
+		}
+	</style>
+	<g id="svg_layer">
+
+		<polyline class="circuit" points="95,55 302.2,55 425,55 			" />
+		<circle class="circuit endpoint" cx="95" cy="55" r="7" />
+		<circle class="circuit endpoint" cx="425" cy="55" r="7" />
+
+		<polyline class="circuit" points="300,275 377,275 425,275 			" />
+		<circle class="circuit endpoint" cx="425" cy="275" r="7" />
+		<!--  -->
+		<line class="circuit" x1="95" y1="495" x2="425" y2="495" />
+		<circle class="circuit endpoint" cx="425" cy="495" r="7" />
+		<circle class="circuit endpoint" cx="95" cy="495" r="7" />
+
+
+		<line class="circuit" x1="300" y1="55" x2="300" y2="495" />
+		<circle class="circuit connection" cx="300" cy="55" r="7" />
+		<circle class="circuit connection" cx="300" cy="275" r="7" />
+		<circle class="circuit connection" cx="300" cy="495" r="7" />
+
+		<text transform="matrix(1 0 0 1 45.0001 285.5659)">
+			<tspan x="0" y="0" class="label">V</tspan>
+			<tspan x="20.1" y="0" class="label_sub">in</tspan>
+		</text>
+
+		<path class="resistor"
+			d="M315,455h-30c-5.5,0-10-4.5-10-10V325c0-5.5,4.5-10,10-10h30c5.5,0,10,4.5,10,10v120 C325,450.5,320.5,455,315,455z" />
+		<text transform="matrix(1 0 0 1 221.505 395.5661)">
+			<tspan x="0" y="0" class="label">R</tspan>
+			<tspan x="19.4" y="0" class="label_sub">2</tspan>
+		</text>
+		<text transform="matrix(1 0 0 1 445.0001 175.566)">
+			<tspan x="0" y="0" class="label">V</tspan>
+			<tspan x="20.1" y="0" class="label_sub">leftover</tspan>
+		</text>
+
+		<path class="resistor"
+			d="M315,235h-30c-5.5,0-10-4.5-10-10V105c0-5.5,4.5-10,10-10h30c5.5,0,10,4.5,10,10v120 C325,230.5,320.5,235,315,235z" />
+		<text transform="matrix(1 0 0 1 221.505 175.566)">
+			<tspan x="0" y="0" class="label">R</tspan>
+			<tspan x="19.4" y="0" class="label_sub">1</tspan>
+		</text>
+		<text transform="matrix(1 0 0 1 445.0001 395.5662)">
+			<tspan x="0" y="0" class="label">V</tspan>
+			<tspan x="20.1" y="0" class="label_sub">goal</tspan>
+		</text>
 	</g>
-	<g>
-		<line x1="95" y1="495" x2="425" y2="495"/>
-		<g>
-			<line class="circuit" x1="95" y1="495" x2="425" y2="495"/>
-			<g>
-				<g>
-					<path class="connection" d="M95,502.5c-4.2,0-7.5-3.4-7.5-7.5s3.4-7.5,7.5-7.5c4.2,0,7.5,3.4,7.5,7.5S99.2,502.5,95,502.5z"/>
-					<path d="M95,503.5c4.7,0,8.5-3.8,8.5-8.5s-3.8-8.5-8.5-8.5c-4.7,0-8.5,3.8-8.5,8.5S90.3,503.5,95,503.5
-						C99.7,503.5,90.3,503.5,95,503.5z M95,488.5c3.6,0,6.5,2.9,6.5,6.5s-2.9,6.5-6.5,6.5c-3.6,0-6.5-2.9-6.5-6.5
-						S91.4,488.5,95,488.5C98.6,488.5,91.4,488.5,95,488.5z"/>
-				</g>
-			</g>
-			<g>
-				<g>
-					<path class="connection" d="M425,502.5c4.2,0,7.5-3.4,7.5-7.5s-3.4-7.5-7.5-7.5c-4.2,0-7.5,3.4-7.5,7.5S420.8,502.5,425,502.5z"/>
-					<path d="M425,503.5c-4.7,0-8.5-3.8-8.5-8.5s3.8-8.5,8.5-8.5c4.7,0,8.5,3.8,8.5,8.5S429.7,503.5,425,503.5
-						C420.3,503.5,429.7,503.5,425,503.5z M425,488.5c-3.6,0-6.5,2.9-6.5,6.5s2.9,6.5,6.5,6.5c3.6,0,6.5-2.9,6.5-6.5
-						S428.6,488.5,425,488.5C421.4,488.5,428.6,488.5,425,488.5z"/>
-				</g>
-			</g>
-		</g>
-	</g>
-	<g>
-		<line x1="300" y1="55" x2="300" y2="495"/>
-		<g>
-			<line class="circuit" x1="300" y1="55" x2="300" y2="495"/>
-			<g>
-				<path d="M292.5,55c0-4.2,3.4-7.5,7.5-7.5s7.5,3.4,7.5,7.5c0,4.2-3.4,7.5-7.5,7.5S292.5,59.2,292.5,55z"/>
-			</g>
-			<g>
-				<path d="M292.5,495c0,4.2,3.4,7.5,7.5,7.5s7.5-3.4,7.5-7.5c0-4.2-3.4-7.5-7.5-7.5S292.5,490.8,292.5,495z"/>
-			</g>
-		</g>
-	</g>
-	<g>
-		<line x1="300" y1="55" x2="300" y2="275"/>
-		<g>
-			<line class="circuit" x1="300" y1="55" x2="300" y2="275"/>
-			<g>
-				<path d="M292.5,55c0-4.2,3.4-7.5,7.5-7.5s7.5,3.4,7.5,7.5c0,4.2-3.4,7.5-7.5,7.5S292.5,59.2,292.5,55z"/>
-			</g>
-			<g>
-				<path d="M292.5,275c0,4.2,3.4,7.5,7.5,7.5s7.5-3.4,7.5-7.5c0-4.2-3.4-7.5-7.5-7.5S292.5,270.8,292.5,275z"/>
-			</g>
-		</g>
-	</g>
-	<g>
-		<polyline points="300,275 377,275 425,275 		"/>
-		<g>
-			<polyline class="circuit" points="300,275 377,275 425,275 			"/>
-			<g>
-				<g>
-					<path class="connection" d="M425,282.5c4.2,0,7.5-3.4,7.5-7.5s-3.4-7.5-7.5-7.5c-4.2,0-7.5,3.4-7.5,7.5S420.8,282.5,425,282.5z"/>
-					<path d="M425,283.5c-4.7,0-8.5-3.8-8.5-8.5s3.8-8.5,8.5-8.5c4.7,0,8.5,3.8,8.5,8.5S429.7,283.5,425,283.5
-						C420.3,283.5,429.7,283.5,425,283.5z M425,268.5c-3.6,0-6.5,2.9-6.5,6.5s2.9,6.5,6.5,6.5c3.6,0,6.5-2.9,6.5-6.5
-						S428.6,268.5,425,268.5C421.4,268.5,428.6,268.5,425,268.5z"/>
-				</g>
-			</g>
-		</g>
-	</g>
-	<text transform="matrix(1 0 0 1 445.0001 395.5662)"><tspan x="0" y="0" class="label">V</tspan><tspan x="20.1" y="0" class="label_sub">goal</tspan></text>
-	<text transform="matrix(1 0 0 1 221.505 395.5661)"><tspan x="0" y="0" class="label">R</tspan><tspan x="19.4" y="0" class="label_sub">2</tspan></text>
-	<path class="resistor" d="M315,455h-30c-5.5,0-10-4.5-10-10V325c0-5.5,4.5-10,10-10h30c5.5,0,10,4.5,10,10v120
-		C325,450.5,320.5,455,315,455z"/>
-	<text transform="matrix(1 0 0 1 445.0001 175.566)"><tspan x="0" y="0" class="label">V</tspan><tspan x="20.1" y="0" class="label_sub">leftover</tspan></text>
-	<path class="resistor" d="M315,235h-30c-5.5,0-10-4.5-10-10V105c0-5.5,4.5-10,10-10h30c5.5,0,10,4.5,10,10v120
-		C325,230.5,320.5,235,315,235z"/>
-	<text transform="matrix(1 0 0 1 221.505 175.566)"><tspan x="0" y="0" class="label">R</tspan><tspan x="19.4" y="0" class="label_sub">1</tspan></text>
-</g>
 </svg>
